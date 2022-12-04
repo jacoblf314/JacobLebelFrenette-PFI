@@ -1,0 +1,185 @@
+
+.main {                              /* wrapper */
+    max-width: 1200px;
+    min-width: 480px;
+    margin: auto;
+}
+.header{                                        /* grid du menu */
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 3px solid black;
+}
+.headerfixed{
+    position: fixed;
+    top: 0;
+    z-index: 2;
+ }
+.menu {                                         
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+}
+h1,h2,h3{
+    font-family: 'Exo 2', sans-serif;
+}
+.menu a {
+    min-width: 80px;
+    font-size: 1.5em;
+    font-family: sans-serif;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    border-radius: 6px;
+    padding: 4px 15px 4px 15px;                                                              /* tout le css pour le menu interactif */
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.menu a:hover {
+    color: white;
+    background-color: black;
+}
+.menu .selected{
+    text-decoration: underline;
+}
+.biographie{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.biographie>div{
+    width: 60%;
+    float:left;
+  }
+  .biographie div:nth-child(2){
+      width: 40%;
+  }
+table{
+    margin-top: 10vh;
+    border: 2px solid black;
+}
+.grid-lettres{
+    display: grid;
+    font-family: 'Roboto', sans-serif;
+    grid-template-columns: 50% 50%;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+.grid-peinture{
+    display: grid;
+    font-family: 'Roboto', sans-serif;
+    grid-template-columns: 25% 50% 25%;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.grid-dessins{
+    display: grid;
+    font-family: 'Roboto', sans-serif;
+    grid-template-columns: 50% 50%;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+.grid-culture{
+    display: grid;
+    font-family: 'Roboto', sans-serif;
+    grid-template-columns: 50% 50%;
+    margin-top: 10vh;
+    margin-bottom: 10vh; 
+}
+.grid-posterite{
+    display: grid;
+    font-family: 'Roboto', sans-serif;
+    grid-template-columns: 50% 50%;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+ }
+.flex-grid {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+  }
+  .col {
+    flex: 1;
+  }
+  .flex-grid .col {
+    width: 50%;
+  }
+.name{
+position: fixed;
+bottom: 50vh;
+right: 0;
+width: 200px;
+border: 3px solid black;
+}
+ section{
+    margin-top: 11vh;
+    margin-bottom: 10vh; 
+    font-family: 'Roboto', sans-serif;
+ }
+ .imgWidth{
+    width: 90%;
+  }
+ .imgGate{
+    height: 90%;
+ }
+ .imgSmall{
+    margin: 5px;
+    float: left;
+}
+.img18ans{
+    float: right;
+    width: 25%;
+}
+.imgtable{
+    width: 40%;
+}
+ @media screen and (max-width: 992px) {             /* breakSpoint */
+    .biographie>div{
+        font-size: 1.2em;;
+        width: 100%;
+    }
+    .headerfixed{
+        position: relative;
+        top: 0;
+    }
+    .biographie div:nth-child(2){
+        width: 100%;
+    }
+    .grid-lettres{
+        display: block;
+        font-size: 1.2em;;
+    }
+    .grid-culture{
+        display: block;
+        font-size: 1.2em;;
+    }
+    .grid-dessins{
+        display: block;
+        font-size: 1.2em;;
+    }
+    .grid-peinture{
+        display: block;
+        font-size: 1.2em;;
+    }
+    .grid-posterite{
+        display: block;
+        font-size: 1.2em;;
+    }
+    .flex-grid{
+        display: block;
+        font-size: 1.2em;;
+    }
+}
+@media screen and (max-width: 1700px){
+    .fixed{
+        display: none;
+    }
+}
+
+
+
+       
